@@ -12,7 +12,7 @@
     --border-light: #ECECEC;
     --border-card: #eeeeee;
 
-    --padding-container: 94px;
+    --padding-section: 94px;
 }
 
 h1,
@@ -39,11 +39,6 @@ body {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-}
-
-.container-hero {
-    padding: 0 15px;
-    text-align: center;
 }
 
 .link.current {
@@ -161,7 +156,15 @@ img {
 /* Hero */
 
 .hero {
+    padding: 200px 0;
     background-color: var(--bg-dark);
+}
+
+.container-hero {
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 0 15px;
+    text-align: center;
 }
 
 .hero-title {
@@ -184,9 +187,8 @@ img {
 
 /* Benefits */
 
-.benefits > .container {
-    padding-top: var(--padding-container);
-    padding-bottom: var(--padding-container);
+.benefits {
+    padding: var(--padding-section) 0;
 }
 
 .benefits-list {
@@ -218,8 +220,8 @@ img {
 
 /* What we do */
 
-.what-we-do > .container {
-    padding-bottom: var(--padding-container);
+.what-we-do {
+    padding: 0 0 var(--padding-section) 0;
 }
 
 .what-we-do .list {
@@ -243,12 +245,8 @@ img {
 /* Our team */
 
 .section-team {
+    padding: var(--padding-section) 0;
     background-color: var(--bg-secondary);
-}
-
-.section-team > .container {
-    padding-top: var(--padding-container);
-    padding-bottom: var(--padding-container);
 }
 
 .team-list {
@@ -286,9 +284,8 @@ img {
 
 /* Portfolio page */
 
-.section-works > .container {
-    padding-top: var(--padding-container);
-    padding-bottom: var(--padding-container);
+.section-works {
+    padding: var(--padding-section) 0;
 }
 
 .tabs-list {
@@ -303,6 +300,7 @@ img {
     letter-spacing: inherit;
     color: var(--title-text-color);
     background-color: var(--bg-secondary);
+    padding: 6px 25px;
 }
 
 .tabs-item:not(:last-child) {
@@ -356,13 +354,9 @@ img {
 /* Footer */
 
 .footer {
+    padding: 60px 0;
     color: var(--text-footer);
     background-color: var(--bg-dark);
-}
-
-.footer > .container {
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 
 .footer .logo {
